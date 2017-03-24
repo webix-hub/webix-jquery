@@ -1,6 +1,6 @@
 {
   "name": "webix-jquery",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jQuery adapter for Webix UI",
   "main": "sources/index.js",
   "scripts": {
