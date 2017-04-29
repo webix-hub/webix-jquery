@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Integration with jQuery. Turning HTML Table into DataTable</title>
+		<script src="//code.jquery.com/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="//cdn.webix.com/edge/webix.css" type="text/css" media="screen" charset="utf-8">
+		<script src="//cdn.webix.com/edge/webix.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../sources/index.js"></script>
+
+		<script type="text/javascript" src="./testdata.js"></script>
+	</head>
+	<style>
+		body{
+			margin:20px;
+		}
+		.comment{
+			font-family: 'PT Sans',Tahoma;
+			font-size: 15px;
+			color: #666;
+			margin-bottom:10px;
+		}
+	</style>
+	<body>
+		<div class="comment">jQuery. Turning HTML Tables into DataTables</div>
+		<table>
+			<tr>
+				<th width="40">ID</th>
+				<th width="230">Film title</th>
+				<th width="80">Released</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>The Shawshank Redemption</td>
+				<td>1994</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>The Godfather</td>
+				<td>1972</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>The Godfather: Part II</td>
+				<td>1974</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>The Good, the Bad and the Ugly</td>
+				<td>1966</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Pulp fiction</td>
+				<td>1994</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>12 Angry Men</td>
+				<td>1957</td>
+			</tr>
+		</table>
+		<hr>
+		
+		
+		
+		<table>
+			<tr>				
+				<th width="40">ID</th>
+				<th width="230">Film title</th>
+				<th width="80">Votes</th>
+				<th width="60">Rating</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>The Shawshank Redemption</td>
+				<td>678790</td>
+				<td>9.2</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>The Godfather</td>
+				<td>511495</td>
+				<td>9.2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>The Godfather: Part II</td>
+				<td>319352</td>
+				<td>9.0</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>The Good, the Bad and the Ugly</td>
+				<td>213030</td>
+				<td>8.9</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Pulp fiction</td>
+				<td>533848</td>
+				<td>8.9</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>12 Angry Men</td>
+				<td>164558</td>
+				<td>8.9</td>
+			</tr>
+		</table>
+		<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$("table").webix_datatable();
+		});
+		</script>
+	</body>
+</html>
