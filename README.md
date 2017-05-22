@@ -17,7 +17,7 @@ JQuery is included by a link specified in your document's head section:
 Component initialization
 -----------------------
 ~~~js
-$(#div ID/ .CSS selector').webix_component({config});
+$('#div ID/ .CSS selector').webix_component({config});
 ~~~
 
 Let it be list:
